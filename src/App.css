@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,600;6..12,900&family=Open+Sans:wght@300;500;700&family=Roboto:wght@100;300;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.greenBackground {
+  background-color: #20cd8d;
   min-height: 100vh;
+}
+
+.greyBackground {
+  background-color: #ccf4e5;
+  min-height: 100vh;
+}
+
+.whiteBackground {
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.darkBackground {
+  background-color: #182527;
+  min-height: 100vh;
+}
+
+.heroSection .container .heroSection-content .row .heroSection-text .mainHeading {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 3rem;
+}
+.heroSection .container .heroSection-content .row .heroSection-text h2 {
+  animation: scaleText 2s infinite;
+}
+.heroSection .container .heroSection-content .row .heroSection-text .btn-primary {
+  background-color: #182527;
+  border-radius: 1.6rem;
+  padding: 0.5rem 1rem;
+  transition: 0.4s ease-in-out;
+}
+.heroSection .container .heroSection-content .row .heroSection-text .btn-primary:hover {
+  transform: scale(1.2);
+}
+
+.about .container-fluid .row {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.about .container-fluid .row .about-content {
+  max-width: 30rem;
+  min-height: 25rem;
+  background-color: #f4f4f4;
+  border-radius: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.menu .container h2 {
+  color: #20cd8d;
+  font-size: 3rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+.menu .container .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .container .row .menu-head {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Nunito Sans", sans-serif;
+  color: #20cd8d;
+}
+.menu .container .row .menu-para {
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.whyme .container h2 {
+  font-family: "Nunito Sans", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2.5rem;
 }
+.whyme .container h3 {
+  font-family: "Nunito Sans", sans-serif;
+  color: #182527;
+}
+
+.faqs .container h2,
+.testimonial .container h2 {
+  color: #20cd8d;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2.5rem;
+}
+
+.card {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.card h3 {
+  color: #20cd8d;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+}
+.card p {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.contact .container .contact-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+}
+.contact .container .contact-text h2 {
+  color: #20cd8d;
+}
+.contact .container .contact-text p {
+  margin-top: 2rem;
+  color: #ffffff;
+}
+.contact .container .contact-text span {
+  display: flex;
+  flex-direction: row;
+  color: #182527;
+  padding: 0.4rem 0.6rem;
+  background: #20cd8d;
+  border-radius: 2rem;
+}
+.contact .container .contact-text span .a:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+@keyframes scaleText {
+  0% {
+    transform: scale(1);
+    color: #182527;
+  }
+  50% {
+    transform: scale(1.2); /* Scale up by 1.2 times */
+    color: #ffffff;
+    font-weight: bolder;
+  }
+  100% {
+    transform: scale(1);
+    color: #182527;
+  }
+}/*# sourceMappingURL=App.css.map */
